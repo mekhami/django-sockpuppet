@@ -51,7 +51,7 @@ document.addEventListener('stimulus-reflex:before', event => {
 
 At the time of this writing, **forms that upload files are unsupported by django-sockpuppet**. We suggest that you design your UI in such a way that files can be uploaded directly, making use of the standard django-form upload techniques. You might need to use `data-reflex-permanent` so that you don't lose UI state when a Reflex is triggered.
 
-As websockets is a text-based protocol that doesn't guarantee packet delivery or the order of packet arrival, it is not well-suited to uploading binary files. This is an example of a problem best solved with vanilla Rails.
+As websockets is a text-based protocol that doesn't guarantee packet delivery or the order of packet arrival, it is not well-suited to uploading binary files. This is an example of a problem best solved with vanilla Django.
 
 #### Resetting a Submitted Form
 
